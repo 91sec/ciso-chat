@@ -122,7 +122,7 @@ export default ({ children, location }) => (
           >
             {children}
           </div>
-          <footer
+          {/* <footer
             style={{
               textAlign: 'center',
               padding: `0 20px 80px 0`,
@@ -166,7 +166,7 @@ export default ({ children, location }) => (
               />
               <strong>Cosmic JS</strong>
             </a>
-          </footer>
+          </footer> */}
         </div>
       )
     }}
