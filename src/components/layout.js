@@ -122,6 +122,12 @@ export default ({ children, location }) => (
           >
             {children}
           </div>
+
+
+            {<footer>
+<script data-ad-client="ca-pub-3905595902752119" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          </footer>}
+
           {/* <footer
             style={{
               textAlign: 'center',
