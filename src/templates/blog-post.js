@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 import get from 'lodash/get'
 import { graphql } from 'gatsby'
@@ -66,7 +66,7 @@ class BlogPostTemplate extends React.Component {
         >
           {post.created}
         </p>
-        {/* <BackgroundImage
+        <BackgroundImage
           Tag="div"
           className="post-hero"
           fluid={post.metadata.hero.local.childImageSharp.fluid}
@@ -74,7 +74,7 @@ class BlogPostTemplate extends React.Component {
           style={{
             marginBottom: rhythm(0.6),
           }}
-        /> */}
+        />
         <div
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.content }}
