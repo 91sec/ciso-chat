@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { StaticQuery, graphql } from 'gatsby'
-import BackgroundImage from 'gatsby-background-image'
+// import BackgroundImage from 'gatsby-background-image'
 
-import cosmicjsLogo from '../../static/cosmicjs.svg'
-import gatsbyLogo from '../../static/gatsby.png'
+// import cosmicjsLogo from '../../static/cosmicjs.svg'
+// import gatsbyLogo from '../../static/gatsby.png'
 import { rhythm, scale } from '../utils/typography'
 
 // Import typefaces
@@ -45,43 +45,43 @@ export default ({ children, location }) => (
       }
 
       if (location.pathname === rootPath || location.pathname === postsPath) {
-        header = (
-          <BackgroundImage
-            Tag="div"
-            className="post-hero"
-            fluid={homgePageHero}
-            backgroundColor={`#007ACC`}
-            style={{
-              height: rhythm(14),
-              position: 'relative',
-              marginBottom: `${rhythm(1.5)}`,
-            }}
-          >
-            <h1
-              style={{
-                ...scale(1.3),
-                position: 'absolute',
-                textAlign: 'center',
-                left: 0,
-                right: 0,
-                top: rhythm(4),
-                marginTop: '0',
-                height: rhythm(2.5),
-              }}
-            >
-              <Link
-                style={{
-                  boxShadow: 'none',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                }}
-                to={'/'}
-              >
-                {siteTitle}
-              </Link>
-            </h1>
-          </BackgroundImage>
-        )
+        // header = (
+          // <BackgroundImage
+          //   Tag="div"
+          //   className="post-hero"
+          //   fluid={homgePageHero}
+          //   backgroundColor={`#007ACC`}
+          //   style={{
+          //     height: rhythm(14),
+          //     position: 'relative',
+          //     marginBottom: `${rhythm(1.5)}`,
+          //   }}
+          // >
+          //   <h1
+          //     style={{
+          //       ...scale(1.3),
+          //       position: 'absolute',
+          //       textAlign: 'center',
+          //       left: 0,
+          //       right: 0,
+          //       top: rhythm(4),
+          //       marginTop: '0',
+          //       height: rhythm(2.5),
+          //     }}
+          //   >
+          //     <Link
+          //       style={{
+          //         boxShadow: 'none',
+          //         textDecoration: 'none',
+          //         color: 'inherit',
+          //       }}
+          //       to={'/'}
+          //     >
+          //       {siteTitle}
+          //     </Link>
+          //   </h1>
+          // </BackgroundImage>
+        // )
       } else {
         header = (
           <h3
@@ -122,7 +122,7 @@ export default ({ children, location }) => (
           >
             {children}
           </div>
-          <footer
+          {/* <footer
             style={{
               textAlign: 'center',
               padding: `0 20px 80px 0`,
@@ -166,7 +166,7 @@ export default ({ children, location }) => (
               />
               <strong>Cosmic JS</strong>
             </a>
-          </footer>
+          </footer> */}
         </div>
       )
     }}
